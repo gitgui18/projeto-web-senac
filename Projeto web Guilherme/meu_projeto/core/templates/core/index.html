@@ -1,0 +1,72 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Soldier of War - Menu{% endblock %}
+
+{% block content %}
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .menu-container {
+        background: url("{% static 'core/img/Design_site.png' %}") no-repeat center center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    .menu-button {
+        position: absolute;
+        width: 220px;
+        height: 50px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    /* Ajuste as coordenadas conforme a imagem */
+    .play-btn {
+        top: 27%;
+        left: 63%;
+        
+    }
+
+    .howto-btn {
+        top: 42%;
+        left: 63%;
+        
+    }
+
+    .settings-btn {
+        top: 60%;
+        left: 65%;
+    }    
+
+    .about-btn {
+        top: 75%;
+        left: 63%;
+        
+    }
+</style>
+
+<div class="menu-container">
+    <form action="{% url 'play' %}">
+        <button class="menu-button play-btn" type="submit" aria-label="Play"></button>
+    </form>
+    <form action="{% url 'how_to_play' %}">
+        <button class="menu-button howto-btn" type="submit" aria-label="How to play"></button>
+    </form>
+    <form action="{% url 'settings' %}">
+        <button class="menu-button settings-btn" type="submit" aria-label="Settings"></button>
+    </form>
+    <form action="{% url 'about' %}">
+        <button class="menu-button about-btn" type="submit" aria-label="About"></button>
+    </form>
+</div>
+{% endblock %}
