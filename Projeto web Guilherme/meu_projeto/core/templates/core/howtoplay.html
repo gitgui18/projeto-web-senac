@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,61 +8,13 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #00a7bd; /* fundo ciano */
-            font-family: 'Arial Black', sans-serif;
-            color: #000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            background: url("{% static 'core/img/template-comojogar.jpg' %}") no-repeat center center fixed;
+            background-size: cover;
             height: 100vh;
-        }
-
-        .howto-container {
-            width: 90%;
-            max-width: 600px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .instructions {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-            line-height: 1.5em;
-        }
-
-        .back-button {
-            background-color: #e30b29; /* vermelho */
-            color: #000;
-            font-weight: bold;
-            font-size: 1.3em;
-            border: none;
-            padding: 15px 40px;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-
-        .back-button:hover {
-            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <div class="howto-container">
-        <h1>How to Play</h1>
-        <div class="instructions">
-            <p>🎯 Use o botão “Play” no menu principal para iniciar a missão.</p>
-            <p>🕹️ Mova o personagem com as setas do teclado ou WASD.</p>
-            <p>🎮 Atire nos inimigos com o botão esquerdo do mouse.</p>
-            <p>💡 Complete os objetivos antes que o tempo acabe!</p>
-        </div>
-
-       
-    </div>
+    <!-- Conteúdo removido, apenas o background permanece -->
 </body>
 </html>

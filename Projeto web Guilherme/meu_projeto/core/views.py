@@ -14,4 +14,7 @@ def about(request):
 
 def play(request):
     return render(request, 'core/play.html')
+
+def signup(request):
+    return render (request, 'core/signup.html')
         

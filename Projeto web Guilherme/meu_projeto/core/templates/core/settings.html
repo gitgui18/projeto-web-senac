@@ -1,0 +1,36 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings - Soldier of War</title>
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body class="neon-theme">
+  <div class="container">
+    <h1>Settings</h1>
+    <form>
+      <label>Music Volume</label>
+      <input type="range" min="0" max="100" value="50" class="slider"/>
+
+      <label>Sound Effects</label>
+      <input type="range" min="0" max="100" value="70" class="slider"/>
+
+      <label>Graphics Quality</label>
+      <select>
+        <option>Low</option>
+        <option selected>Medium</option>
+        <option>High</option>
+      </select>
+
+      <button type="submit" class="save-btn">Save</button>
+    </form>
+    <a href="index.html" class="back-btn">⬅ Back</a>
+  </div>
+</body>
+<link rel="stylesheet" href="css/settings.css" />
+
+</html>

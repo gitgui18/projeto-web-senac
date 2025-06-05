@@ -1,0 +1,53 @@
+body.neon-theme {
+  background-color: #00bbcc;
+  font-family: 'Arial Black', sans-serif;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.missions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mission-btn {
+  background-color: red;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 40px;
+  color: #111;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.mission-btn:hover {
+  transform: scale(1.1);
+  background-color: #ff3333;
+}
+
+.back-btn {
+  margin-top: 30px;
+  display: inline-block;
+  color: black;
+  background: #ff5050;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}

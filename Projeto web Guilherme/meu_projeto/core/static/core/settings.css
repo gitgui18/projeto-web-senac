@@ -1,0 +1,63 @@
+body.neon-theme {
+  background-color: #00bbcc;
+  font-family: 'Arial Black', sans-serif;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.slider, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.save-btn {
+  background-color: red;
+  color: #000;
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #ff3333;
+}
+
+.back-btn {
+  margin-top: 25px;
+  display: inline-block;
+  color: black;
+  background: #ff5050;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
